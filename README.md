@@ -1,0 +1,1 @@
+# Equatorial-Reclamacoes_type2
