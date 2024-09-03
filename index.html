@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráficos e Mapa</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmA6ZNMo-AyhT3LLbPXErrD8c0HDSVyPQ&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Relatório de Reclamações</h1>
+    </header>
+    <div id="container">
+      <div id="sidebar">
+        <select id="citySelect"></select>
+      </div>
+      <div id="content">
+        <div id="map" style="height: 400px; width: 100%"></div>
+        <canvas id="reclamacoesChart" width="800" height="400"></canvas>
+        <canvas id="prazoMedioChart" width="800" height="400"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
